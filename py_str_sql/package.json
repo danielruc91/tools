@@ -1,0 +1,31 @@
+{
+    "name": "py-str-sql",
+    "displayName": "py-str-sql",
+    "description": "Highlight SQL in Python Strings",
+    "version": "0.0.1",
+    "publisher": "cli",
+    "icon": "docs/logo.jpg",
+    "repository": {
+        "url": "https://github.com/danielruc91/tools"
+    },
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "path": "./syntaxes/highlight-sql-string.json",
+                "scopeName": "python-sql.injection",
+                "injectTo": [
+                    "source.python"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.sql": "sql"
+                }
+            }
+        ]
+    }
+}
